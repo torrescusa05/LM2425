@@ -10,4 +10,3 @@
  3. Cómo crear listas no numeradas y numeradas
  4. Establecer enlaces como [este](https://marca.com)
  **Un ejemplo de negrita**
-   

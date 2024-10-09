@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <!--Idioma Inglés-->
+            <input type="radio" name="idioma" value="idiomaingles" id="ingles">
+            <label for="ingles">Inglés</label><br>
+            <!--Idioma alemán-->
+            <input type="radio" name="idioma" value="idiomaaleman" id="aleman">
+            <label for="aleman">Alemán</label><br>
+            <!--Idioma francés-->
+            <input type="radio" name="idioma" value="idiomafrances" id="frances">
+            <label for="frances">Francés</label><br>
+            <!--Despegable-->
+            <select id="conector" name="conector">
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select></br>
+            <!--Nombre-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <!--Apellidos-->
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias</legend>
+            <!--Lista-->
+            <select name="sexo" id="sexo" multiple="4">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select><br>
+            <!--Checkbox-->
+            <input type="checkbox" name="sexo" id="sexohombre" value="sexohombre">
+            <label for="sexohombre">Hombre</label><br>
+            <input type="checkbox" name="sexo" id="sexomujer" value="sexomujer">
+            <label for="sexomujer">Mujer</label><br>
+            <!--Fechas-->
+            <label for="date">Elija una fecha:</label>
+            <input type="date" id="date" value="dd/mm/aaaa" name="Fecha">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

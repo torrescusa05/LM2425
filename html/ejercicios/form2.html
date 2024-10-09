@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Complete, por favor</legend>
+            <!--Tiempo, hora-->
+            <label for="tiempo">Elija una hora: </label>
+            <input type="time" name="tiempo" id="tiempo"><br>
+            <!--Área de texto-->
+            <textarea placeholder="Utilice este cuadro para escribir" rows="6" cols="45"></textarea><br>
+            <!--Botones radio-->
+            <input type="radio" name="lenguaje" id="python" value="lenguajejava">
+            <label for="lenguaje">Java</label><br>
+            <input type="radio" name="lenguaje" id="python" value="lenguapython">
+            <label for="lenguaje">Python</label><br>
+            <input type="radio" name="lenguaje" id="html" value="lenguajehtml">
+            <label for="lenguaje">HTML</label><br>
+            <input type="radio" name="lenguaje" id="visual_basic" value="lenguajevisual_basic">
+            <label for="lenguaje">Visual Basic</label><br><br>
+            <!--Añadir ficheros-->
+            <label for="fichero">Elija un fichero:</label>
+            <input type="file" name="fichero" id="fichero" value="Examinar..."><br>
+            <!--Añadir fecha-->
+            <label for="fecha">Elija una fecha:</label>
+            <input type="date" name="fecha" id="fecha"><br>
+            <!--Añadir un color-->
+            <label for="color">Elija un color:</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        <fieldset>
+            <legend>Rellene las opciones</legend>
+            <!--Añadir checkbox-->
+            <input type="checkbox" name="procesador" id="procesadorintel" value="procesadorintel">
+            <label for="procesador">Intel</label><br>
+            <input type="checkbox" name="procesador" id="procesadoramd">
+            <label for="procesador">AMD</label><br><br>
+            <!--Elegir hora 2-->
+            <label for="hora">Elija una hora:</label>
+            <input type="time" name="hora" id="hora"><br>
+            <label for="fichero">Elija un fichero:</label>
+            <input type="file" name="fichero" id="fichero" value="Examinar..."><br>
+        </fieldset>
+    </form>
+</body>
+</html>

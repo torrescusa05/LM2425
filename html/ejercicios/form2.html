@@ -6,45 +6,68 @@
     <title>Formulario 2</title>
 </head>
 <body>
-    <form>
+    <form action="" method="post">
         <fieldset>
             <legend>Complete, por favor</legend>
             <!--Tiempo, hora-->
-            <label for="tiempo">Elija una hora: </label>
+            <label for="">Elija una hora: </label>
             <input type="time" name="tiempo" id="tiempo"><br>
             <!--Área de texto-->
             <textarea placeholder="Utilice este cuadro para escribir" rows="6" cols="45"></textarea><br>
             <!--Botones radio-->
             <input type="radio" name="lenguaje" id="python" value="lenguajejava">
-            <label for="lenguaje">Java</label><br>
+            <label for="">Java</label><br>
             <input type="radio" name="lenguaje" id="python" value="lenguapython">
-            <label for="lenguaje">Python</label><br>
+            <label for="">Python</label><br>
             <input type="radio" name="lenguaje" id="html" value="lenguajehtml">
-            <label for="lenguaje">HTML</label><br>
+            <label for="e">HTML</label><br>
             <input type="radio" name="lenguaje" id="visual_basic" value="lenguajevisual_basic">
-            <label for="lenguaje">Visual Basic</label><br><br>
+            <label for="">Visual Basic</label><br><br>
             <!--Añadir ficheros-->
-            <label for="fichero">Elija un fichero:</label>
+            <label for="">Elija un fichero:</label>
             <input type="file" name="fichero" id="fichero" value="Examinar..."><br>
             <!--Añadir fecha-->
-            <label for="fecha">Elija una fecha:</label>
+            <label for="">Elija una fecha:</label>
             <input type="date" name="fecha" id="fecha"><br>
             <!--Añadir un color-->
-            <label for="color">Elija un color:</label>
+            <label for="">Elija un color:</label>
             <input type="color" name="color" id="color">
         </fieldset>
         <fieldset>
             <legend>Rellene las opciones</legend>
             <!--Añadir checkbox-->
             <input type="checkbox" name="procesador" id="procesadorintel" value="procesadorintel">
-            <label for="procesador">Intel</label><br>
+            <label for="">Intel</label><br>
             <input type="checkbox" name="procesador" id="procesadoramd">
-            <label for="procesador">AMD</label><br><br>
+            <label for="">AMD</label><br><br>
             <!--Elegir hora 2-->
-            <label for="hora">Elija una hora:</label>
+            <label for="">Elija una hora:</label>
             <input type="time" name="hora" id="hora"><br>
-            <label for="fichero">Elija un fichero:</label>
+            <label for="">Elija un fichero:</label>
             <input type="file" name="fichero" id="fichero" value="Examinar..."><br>
+            <!--Radio buttons-->
+            <input type="radio" name="procesador" id="procesadoramd2" value="procesadoramd">
+            <label for="">AMD</label>
+            <input type="radio" name="procesador" id="procesadorintel_i5" value="procesadorintel-i5">
+            <label for="">Intel i5</label>
+            <input type="radio" name="procesador" id="procesadorintel_i7" value="procesadorintel_i7">
+            <label for="">Intel i7</label><br>
+            <!--Textarea-->
+            <textarea rows="4" cols="55" placeholder="Utilice este recuadro por favor"></textarea><br>
+            <!--DNI-->
+            <label for="">DNI:</label>
+            <input type="text" name="dni" id="dni" placeholder="00000000A"><br>
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos"><br>
+            <label for="">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="999-99-99-99"><br>
+            <!--Color-->
+            <label for="">Elije un color:</label>
+            <input type="color" name="color" id="color2">
+            <br>
+            <input type="submit" value="Enviar">
         </fieldset>
     </form>
 </body>

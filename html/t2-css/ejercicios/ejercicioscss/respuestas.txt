@@ -11,10 +11,17 @@
     - Usaría una clase ya que puedo referirme con solo una descripción de estilo a varios apartados, pero con el id solo
     puedo referirme a uno solo en específico.
 
-Si cambias el estilo de h2 en el CSS, ¿cómo afecta eso a otros encabezados
-h2 en la página?
+Si cambias el estilo de h2 en el CSS, ¿cómo afecta eso a otros encabezados h2 en la página?
     - En este caso solo cambiaría uno, porque es el único h2 del documento, pero si hubiera otros cambiarían todos ya que el selector
     apunta a la etiqueta h2.
 
 ------------------------------------
+
+¿Qué diferencias hay entre alinear texto usando CSS y hacerlo con HTML?
+    - Con CSS podemos ser más exactos con la posición que queramos que tenga el texto, con HTML nos quedamos un poco corto.
+
+¿Cómo cambiarías los márgenes o el padding para mejorar el diseño de los párrafos?
+    - Mediante css externo con los atributos margin o padding, jugaría con ellos hasta conseguir lo que tenga pensado.
+
+-----------------------------------
 

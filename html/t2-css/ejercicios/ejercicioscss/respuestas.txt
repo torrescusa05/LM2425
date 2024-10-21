@@ -25,3 +25,10 @@ Si cambias el estilo de h2 en el CSS, ¿cómo afecta eso a otros encabezados h2 
 
 -----------------------------------
 
+¿Por qué los selectores combinados son útiles?
+    -Son una manera de ahorrar código y mantener los estilos más organizados.
+
+¿Cómo afecta la estructura HTML a los selectores que puedes usar?
+    - Afectan de manera total en un selector, ya que si ponemos div todo será pintado de la forma que pongamos, pero ignorará si
+    tenemos etiquetas diferentes dentro.
+    

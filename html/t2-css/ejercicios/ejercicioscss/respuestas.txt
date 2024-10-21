@@ -1,0 +1,6 @@
+¿Qué diferencias encontraste entre los tres métodos de aplicar CSS?
+    - La forma de aplicarse, el tiempo para crear cada método y los resultados.
+
+¿Qué ventajas ves en usar CSS externo frente a los otros métodos?
+    - Podemos tener la información de los estilos de manera más clara respecto a los otros,
+    además de no tocar o molestar al esqueleto de la página.

@@ -3,4 +3,18 @@
 
 ¿Qué ventajas ves en usar CSS externo frente a los otros métodos?
     - Podemos tener la información de los estilos de manera más clara respecto a los otros,
-    además de no tocar o molestar al esqueleto de la página.
+    además de no tocar o molestar el esqueleto de la página.
+
+----------------------------------
+
+¿Por qué usarías una clase en lugar de un id?
+    - Usaría una clase ya que puedo referirme con solo una descripción de estilo a varios apartados, pero con el id solo
+    puedo referirme a uno solo en específico.
+
+Si cambias el estilo de h2 en el CSS, ¿cómo afecta eso a otros encabezados
+h2 en la página?
+    - En este caso solo cambiaría uno, porque es el único h2 del documento, pero si hubiera otros cambiarían todos ya que el selector
+    apunta a la etiqueta h2.
+
+------------------------------------
+

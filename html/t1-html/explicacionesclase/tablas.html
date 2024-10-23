@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <p>Una tabla permite la distribución la información organizada por filas(rows) y columnas(cols).
+        Se utiliza la etiqueta html de <i>table</i>.
+        Ejemplo:
+    </p>
+    <table border="1">
+        <!--- Indica que voy a diseñar una tabla-->
+        <tr>    <!-- Indica la fila que estamos creando-->
+            <td bgcolor="red"><font color="white">Lunes</font></td>  <!-- Indica la columna que estamos creando-->
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td bgcolor="#e8df0e">FH</td>
+            <td>BD</td>
+            <td>ISO</td>
+            <td>ISO</td>
+            <td>ISO</td>
+        </tr>
+    </table>
+    <h2>Problemas</h2>
+    <p>Vamos a experimentar problemas cuando el nº de columnas no sea el mismo en todas las filas.
+        Lo siguiente está mal... Ejemplo:
+    </p>
+    <table border="1">
+        <!--- Indica que voy a diseñar una tabla-->
+        <tr>    <!-- Indica la fila que estamos creando-->
+            <td>Lunes</td>  <!-- Indica la columna que estamos creando-->
+            <td>Martes</td>
+            <td>Miércoles</td>
+        </tr>
+        <tr>
+            <td>FH</td>
+            <td>BD</td>
+            <td>ISO</td>
+            <td>ISO</td>
+            <td>ISO</td>
+        </tr>
+    </table>
+    <h2>Soluciones</h2>
+    <p>Si deseamos que una celda ocupe más de una columna o fila entonces utilizaremos las propiedades colspan o rowspan.
+        Ejemplo:
+    </p>
+    <table border="1">
+        <!--- Indica que voy a diseñar una tabla-->
+        <tr>    <!-- Indica la fila que estamos creando-->
+            <td>Lunes</td>  <!-- Indica la columna que estamos creando-->
+            <td>Martes</td>
+            <td colspan="3">Miércoles</td>
+        </tr>
+        <tr>
+            <td>FH</td>
+            <td>BD</td>
+            <td>ISO</td>
+            <td>ISO</td>
+            <td>ISO</td>
+        </tr>
+    </table>
+    <p>Otro ejemplo con una celda que ocupa dos filas. Ejemplo:</p>
+    <table border="1">
+        <!--- Indica que voy a diseñar una tabla-->
+        <tr>    <!-- Indica la fila que estamos creando-->
+            <td rowspan="2">Lunes</td>  <!-- Indica la columna que estamos creando-->
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>BD</td>
+            <td>ISO</td>
+            <td>ISO</td>
+            <td>ISO</td>
+        </tr>
+    </table>
+</body>
+</html>

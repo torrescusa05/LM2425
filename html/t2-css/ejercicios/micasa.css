@@ -7,7 +7,9 @@
                 height: 700px;
                 position: absolute;
                 top:300px;
-                left:150px;   
+                left:150px;
+                border-top-left-radius: 40%;
+                border-top-right-radius: 40%;  
             }
 
     /*Ventana 1 (izq)*/
@@ -145,10 +147,26 @@
 
 /*Suelo*/
 #suelo  {
-            background-color: green;
+            background-image: url('../imagenes/cesped.jpeg');
             position: absolute;
             width: 1920px;
-            height: 800px;
-            top: 1000px;
+            height: 400px;
+            top: 900px;
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-size: auto;
         }
 /*Fin suelo*/
+
+/*Techo*/
+#techo  {
+            position:absolute;
+            width: 1100px;
+            height: 400px;
+            background-color: darkred;
+            top: 100px;
+            left: 100px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+/*Fin de techo*/

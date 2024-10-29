@@ -17,3 +17,8 @@ para publicidad.
 - Que podemos añadirle la propiedad clear para que forme parte del contenedor, o que automáticamente se vaya para un lado.
 
 Introduce texto en las cajas...¿para que sirve la propiedad overflow?
+- La propiedad overflow nos permite decidir que hacer con el texto en un contenedor, podemos elegir si queremos que sobrepase, que normalmente estará por defecto esta opción,
+o otras como que se quede cortado o sea necesario el uso de un scroll para leerlo.
+
+    El elemento clear: both, nos permite que un elemento no tape a otros que esten flotando, y lo asigna abajo de ellos.
+    

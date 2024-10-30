@@ -9,8 +9,101 @@
                 top:300px;
                 left:150px;
                 border-top-left-radius: 40%;
-                border-top-right-radius: 40%;  
+                border-top-right-radius: 40%;
+                border: solid;
+                border-color: black;  
             }
+    
+    /*Ladrillo 1*/
+    #ladrillo1  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 40px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 300px;
+                    left: 20px;
+                }
+    /*Fin Ladrillo 1*/
+
+    /*Ladrillo 2*/
+    #ladrillo2  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 324px;
+                    left: 50px;
+                }
+    /*Fin Ladrillo 2*/
+
+    /*Ladrillo 3*/
+    #ladrillo3  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 500px;
+                    left: 100px;
+                }
+    /*Fin Ladrillo 3*/
+    
+    /*Ladrillo 4*/
+    #ladrillo4  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 600px;
+                    left: 350px;
+                }
+    /*Fin Ladrillo 4*/
+
+    /*Ladrillo 5*/
+    #ladrillo5  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 550px;
+                    left: 800px;
+                }
+    /*Fin Ladrillo 5*/
+
+    /*Ladrillo 6*/
+    #ladrillo6  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 574px;
+                    left: 770px;
+                }    
+    /*Fin Ladrillo 6*/
+
+    /*Ladrillo 7*/
+    #ladrillo7  {
+                    background-color: rgb(53, 17, 17);
+                    position: absolute;
+                    width: 60px;
+                    height: 20px;
+                    border: solid;
+                    border-color: black;
+                    top: 250px;
+                    left: 770px;
+                }
+    /*Fin Ladrillo 7*/
 
     /*Ventana 1 (izq)*/
     #ventana1       {   
@@ -168,5 +261,17 @@
             top: 100px;
             left: 100px;
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            border: solid;
+            border-color: black;  
         }
 /*Fin de techo*/
+
+/*Cielo*/
+#cielo  {
+            position: absolute;
+            background-color: rgb(51, 173, 214);
+            z-index: -2;
+            width: 1920px;
+            height: 1000px;
+        }
+/*Fin de cielo*/

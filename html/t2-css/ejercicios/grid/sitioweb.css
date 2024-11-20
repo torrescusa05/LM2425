@@ -19,6 +19,7 @@ body{
     background-color: lightgray;
     border: 2px dashed black;
     margin: 0 auto;
+    justify-content: stretch;
 }
 
 .caja{

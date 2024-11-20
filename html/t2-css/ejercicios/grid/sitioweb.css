@@ -7,7 +7,10 @@ body{
 .contenedor{
     display: grid;
     width: 80%;
-    height: 84%;
+    height: 84vh;
+    /*Corrección*/
+    grid-template-rows: 10% 20% auto 10%;
+    grid-template-columns: auto auto;
     grid-template-areas: 'cabecera cabecera'
                             'menu menu'
                             'contenido banners'
@@ -22,6 +25,7 @@ body{
     border: 4px solid black;
     background-color: lightgray;
     text-align: center;
+    line-height: 150px;
 }
 
 .c1{

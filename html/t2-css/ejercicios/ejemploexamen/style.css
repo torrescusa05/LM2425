@@ -1,0 +1,84 @@
+body{
+    background: url(bg.jpg) no-repeat fixed center;
+    font-family: 'Trebuchet MS', 'Geneva', 'Sans-Serif';
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #b28306;
+    color: #4c3803;
+    line-height: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 1px;
+
+}
+
+header h1{
+    font-weight: bolder;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebcd7c;
+    border-radius: 20px;
+    font-weight: bolder;
+    height: 50px;
+}
+
+nav div {
+    background-color: #4c3803;
+    border-radius: 20px;
+    text-decoration: none; 
+    text-align: center;
+    line-height: 30px;
+    padding: 0px 150px 0px 150px;
+}
+
+nav div a{
+    color: #b28306;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ebcd7c;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-bottom: solid 10px black;
+}
+
+.cuerpo section {
+    width: 75%;
+}
+
+.cuerpo section h2 {
+    margin: 50px 0px 30px 0px;
+    font-size: 26px;
+}
+
+.cuerpo section p::first-letter {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.cuerpo aside {
+    width: 25%;
+    background-color: #b28306;
+    border-radius: 20px;
+}
+
+.cuerpo aside p {
+    margin: 2%;
+}
+
+

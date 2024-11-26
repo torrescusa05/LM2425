@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url(trebuc.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family:'Trebuchet MS','Geneva','sans-serif';  
+}
+
+body {
+    margin:0;
+}
+
+header{
+        color:#4c3803;
+        background-color: #b28306;
+        text-align: center;
+        border-radius: 20px;
+}
+
+aside {
+    background-color: #b28306;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    background-color: #ebcd7c;
+    border-radius: 20px;
+}
+
+nav a {
+    flex:auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4c3803;
+    color:#b28306;
+    padding: 5px 0px;
+    margin: 0px 5px;
+    border-radius: 20px;
+}
+
+nav a:hover{
+    color:white;
+    outline: 1px solid white;
+}
+
+a {
+    color:gray;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+article p::first-letter {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #4c3803;
+}
+
+article,aside,footer,header{
+    padding: 1rem;
+}
+
+@media screen and (min-width:480px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        box-sizing: border-box;
+        max-width: 75rem;
+    }
+
+    main{
+        border-bottom: 0.5rem solid black;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    nav, header {
+        order: -1;
+    }
+    
+    article {
+        flex: 75%;
+    }
+
+    aside {
+        flex: 25%;
+    }
+}
+
+

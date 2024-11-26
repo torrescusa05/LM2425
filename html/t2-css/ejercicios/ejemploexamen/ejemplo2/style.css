@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+html {
+    font-family: 'Open Sans', 'Helvetica', 'sans-serif';
+}

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Open Sans Condesed';
+    src: url('open-sans-condensed/OpenSans-CondBold.ttf') format('truetype');
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Open Sans Condesed';
+    font-size: 24px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h1{
+    margin-left: 15vh;
+}
+
+fieldset {
+    display: grid;
+    /*Colpase cuestionario
+    grid-template-columns: 20vh 80vh;*/
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'rellena rellena'
+                         'nombre rellenanombre'
+                         'poderes indicapoderes'
+                         'color eligecolor'
+                         'desc indicadesc'
+                         'email introduceemail'
+                         'nacimiento fechanac'
+                         'bando selecbando'
+                         'historia historia'
+                         'textarea textarea'
+                         'imagen selecimagen'
+                         'crear ---';
+    row-gap: 1em;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    background-color: white;
+    border: solid black 1px;
+}
+
+input{
+    font-family: 'Open Sans Condesed';
+    font-size: 24px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.maximo{
+    width: 800px;
+}
+
+select, textarea{
+    font-family: 'Open Sans Condesed';
+    font-size: 24px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.rellena{
+    grid-area: rellena;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.rellenanombre{
+    grid-area: rellenanombre;
+}
+
+.poderes{
+    grid-area: poderes;
+}
+
+.indicapoderes{
+    grid-area: indicapoderes;
+}
+
+.color{
+    grid-area: color;
+}
+
+.eligecolor{
+    grid-area: eligecolor;
+}
+
+.desc{
+    grid-area: desc;
+}
+
+.indicadesc{
+    grid-area: indicadesc;
+}
+
+.email{
+    grid-area: email;
+}
+
+.introduceemail{
+    grid-area:introduceemail;
+}
+
+.bando{
+    grid-area: bando;
+}
+
+.selecbando{
+    grid-area:selecbando;
+}
+
+.historia{
+    grid-area:historia; 
+}
+
+.textarea{
+    grid-area:textarea;
+}
+
+.imagen{
+    grid-area:imagen;
+}
+
+.selecimagen{
+    grid-area:selecimagen;
+}
+
+.crear{
+    grid-area: crear;
+}

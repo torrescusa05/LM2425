@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Crea tu personaje</h1>
+    <form action="" method="post">
+        <fieldset>
+            <div class="rellena">
+                <label>Por favor rellena este formulario.</label>
+            </div>
+            <div class="nombre">
+                <label>Nombre:</label>
+            </div>
+            <div class="rellenanombre">
+                <input type="text" id="nombre" placeholder="Escribe el nombre de tu personaje..." name="nombre" class="maximo">
+            </div>
+            <div class="poderes">
+                <label>¿Tiene poderes especiales?</label>
+            </div>
+            <div class="indicapoderes">
+                <input type="checkbox" id="poder" value="poderespecial" name="especial">
+            </div>
+            <div class="color">
+                <label>Color favorito</label>
+            </div>
+            <div class="eligecolor">
+                <input type="color" name="color">
+            </div>
+            <div class="desc">
+                <label>Descripción del mismo</label>
+            </div>
+            <div class="indicadesc">
+                <input type="text" maxlength="256" id="desc" name="desc" class="maximo" minlength="14">
+            </div>
+            <div class="email">
+                <label>Email de su tribu</label>
+            </div>
+            <div class="introduceemail">
+                <input type="email" name="correo" id="correo" class="maximo">
+            </div>
+            <div class="nacimiento">
+                <label>Nacimiento</label>
+            </div>
+            <div class="fechanac">
+                <input type="date" name="nacimiento" id="nac" class="maximo">
+            </div>
+            <div class="bando">
+                <label>Bando</label>
+            </div>
+            <div class="selecbando">
+                <select class="maximo">
+                    <option>Buenos</option>
+                    <option>Malvados</option>
+                </select>
+            </div>
+            <div class="historia">
+                <label>Historia del personaje</label>
+            </div>
+            <div class="textarea">
+                <textarea placeholder="Puntos débiles..." cols="130" rows="7"></textarea>
+            </div>
+            <div class="imagen">
+                <label>Imagen:</label>
+            </div>
+            <div class="selecimagen">
+                <input type="file" name="file" id="file">
+            </div>
+            <div class="crear">
+                <input type="submit" value="Crear" class="maximo">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

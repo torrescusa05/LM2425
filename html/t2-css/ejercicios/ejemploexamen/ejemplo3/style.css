@@ -1,47 +1,37 @@
 html {
-    font-family: "Century Gothic",Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-family: 'Didact Gothic',Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
     color: white;
 }
 
 body {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-width: 100vh;
     background-color: white;
+    box-sizing: border-box;
 }
 
 header {
     background-color: darkgray;
-    line-height: 80px;
+    box-sizing: border-box;
     text-align: center;
-    border-radius: 10px;
 }
 
 main{
     margin-top: 2px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 nav {
     background-color: darkcyan;
     width: 15em;
-    margin: 0;
-    border-radius: 10px;
     align-items: stretch;
-    flex: 1;
-    margin-right: 5px;
 }
 
-nav ul{
-    border-bottom: 1px solid rgb(255,255,255,0.3);
+nav ul {
     padding: 0.5em 1em;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 nav ul a:hover {
@@ -51,6 +41,8 @@ nav ul a:hover {
 nav ul a {
     color: white;
     text-decoration: none;
+    padding-right: 6em;
+    border-bottom: 1px solid rgb(255,255,255,0.3);
 }
 
 article div {
@@ -58,8 +50,7 @@ article div {
 }
 
 article {
-    flex: 2;
-    border-radius: 10px;
+    flex: 1;
     background-color: darkolivegreen;
 }
 
@@ -67,20 +58,77 @@ article {
     float: left;
     height: 200px;
     width: 200px;
+    outline: 5px solid darkgoldenrod;
     border-radius: 2vh;
     max-width: 100%;
-}   
+    margin: 3vh 5vh 0vh 4vh;
+}
+
+.texto p {
+    margin: 0 0 3vh 2vh;
+    line-height: 25px;
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+#italic {
+    font-style: italic;
+}
+
+.texto p::first-letter {
+    font-size: 2em;
+    color: rgb(255,255,255,0.3);
+}
+
+.texto p::selection {
+    background-color: white;
+    color: lightskyblue;
+}
 
 footer {
     background-color: darkgoldenrod;
+    text-align: center;
 }
+
+footer a {
+    color: rgb(11, 104, 180);
+}
+
+.relleno {
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    color: white;
+    border-radius: 10px;
+}   
 
 @media print {
 
     body {
         font-family: 'Times New Roman', Times, serif;
+        color: black;
     }
     nav {
         display: none;
-    }    
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
+
+@media screen and (max-width: 640px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    nav {
+        box-sizing: border-box;
+        width: auto;
+    }
+} 

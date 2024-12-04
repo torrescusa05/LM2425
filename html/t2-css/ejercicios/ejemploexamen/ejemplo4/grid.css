@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+a {
+    color:#434344;
+    text-decoration: none;
+}
+
+body {  
+    background-color: #eee;
+    color: #434344;
+    font-size: 300;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto 850px auto;
+}
+
+.contenedor {
+    grid-column: 2;
+    max-width: 850px;
+    display: grid;
+    background-color: #fff;
+    padding: 0 60px 0 60px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+
+

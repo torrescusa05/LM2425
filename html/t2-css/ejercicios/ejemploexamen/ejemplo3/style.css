@@ -20,7 +20,7 @@ header {
 main{
     margin-top: 2px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
 }
 

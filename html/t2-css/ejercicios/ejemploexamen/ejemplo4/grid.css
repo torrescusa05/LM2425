@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+a {
+    color:#434344;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {  
+    background-color: #eee;
+    color: #434344;
+    font-size: 300;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto 850px auto;
+}
+
+.contenedor {
+    grid-column:2;
+    max-width: 850px;
+    display: grid;
+    background-color: #fff;
+    padding: 0 60px 0 60px;
+    gap: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+header {
+    display: grid;
+    grid-template-columns:1fr 1fr auto;
+    color: #908d8d;
+    padding: 20px 0 20px 0;
+    border-bottom: 5px solid #0d6427;
+    border-bottom-style: dashed;
+}
+
+nav {
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 3px solid #0d6427;
+    margin-right: 15px;
+    background-color: #f9f9f9;;
+}
+
+nav h2 {
+    margin-bottom: 20px;
+}
+
+.nav {
+    list-style: none;
+    font-size: 0.75rem;
+}
+
+
+.cabecera {
+    width: auto;
+}
+
+.inicio {
+    grid-column: 1;
+    margin-right: 30px;
+}
+
+.contacto {
+    grid-column: 1; 
+}
+
+.boton {
+    grid-column: 3;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    background-color: #0d6427;
+    border-radius: 1.25rem;
+    color: white;
+}
+
+aside {
+    grid-column: 2;
+}
+
+section {
+    grid-column: 2;
+}
+
+section h2 {
+    color: #ada70a;
+    font-size: 32px;
+    margin: 1rem 0 1rem 0;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #0d6427;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+

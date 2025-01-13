@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius</title>
+</head>
+<body>
+    <script>
+        function convertir() {
+            var celcius = document.getElementById("temperatura").value;
+            var conversion;
+            conversion = celcius*9/5+32,
+            alert ("Son "+conversion+" Fº");
+        }
+    </script>
+    <form>
+        <label>Temperatura Cº </label>
+        <input type="text" name="Temperatura" id="temperatura"><br>
+        <button onclick="convertir()">Cambiar a Fahrenheit</button>
+    </form>
+</body>
+</html>

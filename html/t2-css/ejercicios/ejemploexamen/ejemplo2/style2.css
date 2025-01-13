@@ -6,7 +6,7 @@ html{
 
 body{
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgb(238,238,238);
 }
 
 a{
@@ -17,6 +17,12 @@ a{
 article{
     background-color: rgb(11,76,26);
     color:white;
+    padding: 1em;
+}
+
+article p{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 main{
@@ -27,4 +33,43 @@ main{
 
 aside fieldset{
     background-color: white;
+    padding: 1em;
+    border: none;
+    outline: 2px solid white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-rows: 'z z'
+                        'a b'
+                        'c d'
+                        'e e'
+                        'f f';
+}
+
+.z{
+    grid-area: z;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
 }

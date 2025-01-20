@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente académico</title>
+</head>
+<body>
+    <script>
+        function resumen() {
+            var nombre = document.getElementById("nombre").value; /*<--- Nombre que aparecerá arriba del cuerpo h3*/
+            var curso = document.getElementById("curso").value; /*<---- Indicación del curso donde estamos que aparecerá imprimido en h3*/
+            /*Aprobado, suspenso y media*/
+            var aprobado = 0;
+            var suspenso = 0;
+            var media;
+            /*Implantación de sistemas operativos*/
+            var iso = parseFloat(document.getElementById("iso").value);   
+            /*Redes*/
+            var redes = parseFloat(document.getElementById("redes").value);
+            /*Base de Datos*/
+            var basedatos = parseFloat(document.getElementById("basedatos").value);
+            /*Lenguaje de Marcas*/
+            var lenguaje = parseFloat(document.getElementById("lenguaje").value);
+            /*Fundamentos Hardware*/
+            var fundamento = parseFloat(document.getElementById("fundamento").value);
+            /*IPE 1 = FOL*/
+            var fol = parseFloat(document.getElementById("fol").value);
+            /*Digitalización*/
+            var digitalizacion = parseFloat(document.getElementById("digitalizacion").value);
+            /*Sostenibilidad*/
+            var sostenibilidad = parseFloat(document.getElementById("sostenibilidad").value);
+
+            if (isNaN(curso)) {
+                alert("Por favor introduzca un curso válido");
+            }
+            else
+            {
+                document.getElementById("mostrarcurso").innerHTML = +curso;
+                document.getElementById("mostrarnombre").innerHTML = nombre;
+            }
+            /*Comprobar notas, aprobados y suspensos, media*/
+            if (isNaN(iso) || isNaN(redes) || isNaN(basedatos) || isNaN(lenguaje) || isNaN(fundamento) || isNaN(fol) || isNaN(digitalizacion) || isNaN(sostenibilidad)) {
+                alert("Por favor, introduzca correctamente sus notas.");
+            }
+            else {
+                /*ISO*/
+                if(iso<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*REDES*/
+                if(redes<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*BD*/
+                if(basedatos<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*LM*/
+                if(lenguaje<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*FH*/
+                if(iso<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*FOL || IPE 1*/
+                if(fol<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*Digitalización*/
+                if(digitalizacion<5){
+                    suspenso = suspenso + 1;
+                    }
+                    else {
+                    aprobado = aprobado + 1;
+                }
+
+                /*Sostenibilidad*/
+                if(sostenibilidad<5){
+                    suspenso = suspenso + 1;
+                }
+                else {
+                    aprobado = aprobado + 1;
+                }
+                media=(iso+redes+basedatos+lenguaje+fundamento+fol+digitalizacion+sostenibilidad)/8; /*Media de notas*/
+            }
+            document.getElementById("aprobadosuspenso").innerHTML = "Has aprobado "+aprobado+ " asignaturas, y suspenso "+suspenso;
+            document.getElementById("media").innerHTML = "Su media actual es de: "+media;
+        }
+    </script>
+    <h3>Expediente académico año <span id="mostrarcurso"></span> de: <span id="mostrarnombre"></span></h3>
+    <p>Nombre: </p>
+    <input type="text" id="nombre">
+    <p>Curso: </p>
+    <input type="text" id="curso" placeholder="2000/01">
+    <!--cursos-->
+    <p>Implantación de Sistemas Operativos:</p>
+    <input type="text" id="iso">
+    <p>Redes Área Local</p>
+    <input type="text" id="redes">
+    <p>Base de Datos</p>
+    <input type="text" id="basedatos">
+    <p>Lenguaje de Marcas</p>
+    <input type="text" id="lenguaje">
+    <p>Fundamentos Hardware</p>
+    <input type="text" id="fundamento">
+    <p>Formación Orientativa Laboral:</p>
+    <input type="text" id="fol">
+    <p>Digitalización</p>
+    <input type="text" id="digitalizacion">
+    <p>Sostenibilidad</p>
+    <input type="text" id="sostenibilidad">
+    <!--Botón-->
+    <button onclick="resumen()">Mostrar expediente final</button>
+    <h4 id="aprobadosuspenso"></h4>
+    <h4 id="media"></h4>
+
+</body>
+</html>

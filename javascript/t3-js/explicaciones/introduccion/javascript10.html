@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 10</title>
+</head>
+<body>
+    <script>
+        var numero=1; //Variable declarada de manera global
+
+        document.getElementById('demo').innerHTML=numero;
+
+        //Incrementar valor
+        function suma () {
+            numero+=1;
+            document.getElementById('demo').innerHTML=numero
+        }
+
+        //Decrementar valor
+        function resta () {
+            numero -=1;
+            document.getElementById('demo').innerHTML=numero;
+        }
+
+    </script>
+    <p>Prueba de una variante global</p>
+    <button onclick="suma()" onkeypress="suma()">Incrementar</button>
+    <button onclick="resta()">Decrementar</button>
+    <p id="demo"></p>
+</body>
+</html>

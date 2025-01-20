@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius</title>
+</head>
+<body>
+    <script>
+        function convertirf() {
+            var celcius = parseFloat(document.getElementById("temperatura").value);
+            var conversion;
+            conversion = celcius*9/5+32,
+            alert("Son "+conversion+" Fº");
+        }
+
+        function convertirc() {
+            var fahrenheit = parseFloat(document.getElementById("temperatura").value);
+            var conversion;
+            conversion = fahrenheit-32* 1.8,
+            alert("Son "+conversion+" Cº");
+        }
+    </script>
+    <form>
+        <p>Temperatura</p>
+        <input type="text" id="temperatura">
+        <button onclick="convertirf()">Cambiar a Fahrenheit</button>
+        <button onclick="convertirc()">Cambiar a Celcius</button>
+        <p id="mostrar"></p>
+    </form>
+</body>
+</html>

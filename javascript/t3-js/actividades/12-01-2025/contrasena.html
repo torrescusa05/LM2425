@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña</title>
+</head>
+<body>
+    <script>
+        function envio () {
+            var usuario = document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contrasena").value;
+            alert ("Bienvenido usuario "+usuario+" con la contraseña "+contrasena);
+        }
+    </script>
+    <form>
+        <fieldset>
+            <legend>Inicie Sesión</legend>
+            <label>Usuario: </label>
+            <input type="text" name="Usuario" id="usuario">
+            <br><br>
+            <label>Contraseña: </label>
+            <input type="password" name="Contraseña" id="contrasena">
+            <br><br>
+            <button type="submit" onclick="envio()">Iniciar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

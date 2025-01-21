@@ -14,8 +14,8 @@
                 alert("Por favor, introduzca valor númerico");
             }
             else {
-                total = (3.14*radio*radio);
-                document.getElementById("resultadofinal").innerHTML = "El área del círculo es: " +total;
+                total = (Math.PI*Math.pow(radio, 2));
+                document.getElementById("resultadofinal").innerHTML = "El área del círculo es: " +total.toFixed(2);
             }
         }
     </script>

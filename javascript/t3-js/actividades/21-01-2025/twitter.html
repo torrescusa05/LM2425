@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red social</title>
+</head>
+<body>
+    <script>
+        var array = []
+
+        function anadir ()
+        {
+            var tweet = document.getElementById('tweet').value;
+            array.push(tweet);
+
+            document.getElementById('caja').innerHTML = tweet;
+        }
+    </script>
+    <input type="text" id="tweet" placeholder="¿Qué estás pensando hoy?">
+    <button onclick="anadir()">Publicar</button>
+    <div>
+        <img src="">
+        <p id="caja"></p>
+        <img src="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina un número</title>
+</head>
+<body>
+    <h1>Adivina el número</h1>
+    <p>He pensado en un número del 1 al 100...</p>
+    <input type="text" id="entrada" placeholder="Introduce un número">
+    <button onclick="comprobar()">Comprobar</button>
+    <p id="resultado"></p>
+    <p id="contador"></p>
+    <script>
+        var numero=Math.floor(Math.random()*100)+1;
+        var contador = 0;
+        function comprobar()
+        {
+            var entrada = parseInt(document.getElementById('entrada').value);
+            if (entrada==numero)
+            {
+                document.getElementById('resultado').innerHTML = "Has acertado!";
+                contador++;
+                document.getElementById('contador').innerHTML = "Lo has logrado en "+contador+" intentos."; 
+            }
+            else if (entrada<numero)
+            {
+                document.getElementById('resultado').innerHTML = "El número pensado es mayor";
+                contador = contador + 1;
+            }
+            else
+            {
+                document.getElementById('resultado').innerHTML = "El número pensado es menor";
+                contador = contador + 1;
+            }
+        }
+    </script>
+</body>
+</html>

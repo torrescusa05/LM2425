@@ -40,5 +40,21 @@ function mayor()
     {
         return Math.max.apply(null, numero);
     }
+}
 
+//Título menor en la lista
+function menor()
+{
+    //Título indicando el mínimo
+    document.getElementById("menor").innerHTML = "El número más pequeño es: " +min(lista);
+    function min(numero)
+    {
+        return Math.min.apply(null, numero);
+    }
+}
+
+function completo()
+{
+    var orden = lista.sort( );
+    document.getElementById("lista").innerHTML = "Su lista de número es " +orden;
 }

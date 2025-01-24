@@ -33,12 +33,12 @@ function suma()
 //Encontrar máximo en la lista
 function mayor()
 {
-    var maximo;
-    for (var i=0; 1 < lista.length; i++)
+    //Título indicando el máximo
+    document.getElementById("maximo").innerHTML = "El número más alto es: " +maximo(lista);
+
+    function maximo(numero)
     {
-        maximo=Math.max(lista[i]);
+        return Math.max.apply(null, numero);
     }
-    //Título indicando el nº máximo
-    document.getElementById("maximo").innerHTML = "El número más alto es:" +maximo;
 
 }

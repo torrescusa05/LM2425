@@ -18,7 +18,7 @@ function anadir()
 //Ordenar lista y mostrarlo por pantalla
 function ordenar()
 {
-    orden = lista.sort( ); //Espacio que se lo traga el programa???? No tiene sentido
+    var orden = lista.sort( ); //Espacio que se lo traga el programa???? No tiene sentido
     document.getElementById("final").innerHTML = "Su lista de número es " +orden;
 }
 

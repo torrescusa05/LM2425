@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        function factorial()
+        {
+            var numero = parseInt(document.getElementById("num").value);
+            var total = 1;
+            if (isNaN(numero) || numero<=0)
+            {
+                alert("Por favor introduzca un número válido (entero y positivo)");
+                return;
+            }
+            //Bucle for
+            for (var i = 1; i <= numero; i++)    
+            {  
+                total = total * i; //También se puede escribir total *= i; (es una forma más compacta)
+            }
+            document.getElementById("resultado").innerHTML = "El resultado factorial es " +total ;
+        }
+    </script>
+    <h1>Calcule su número factorial</h1>
+    <input type="text" id="num" placeholder="5">
+    <button onclick="factorial()">Ver factorial</button>
+    <h4 id="resultado"></h4>
+</body>
+</html>

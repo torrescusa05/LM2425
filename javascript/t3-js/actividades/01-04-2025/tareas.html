@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <script>
+        var lista = [];
+        //Guardar tarea al array
+        function guardarTarea()
+        {
+            var tarea=document.getElementById('tarea').value;
+            lista.push(tarea);
+            if (tarea != "")
+            {
+                localStorage.setItem('tareas', JSON.stringify(lista));
+                document.getElementById('tareas').innerHTML = lista;
+            }
+        }
+
+        //Cargar array desde local
+        function cargarTarea()
+        {
+            let GuardarTarea = JSON.parse(localStorage.getItem('tareas'));
+            if (GuardarTarea != null)
+            {
+                document.getElementById('tareas').innerHTML = lista;
+            }
+            else
+            {
+                document.getElementById('tareas').innerHTML = 'No hay tareas actualmente';
+            }
+        }
+        window.onload = cargarTarea;
+    </script>
+    <h1>Introduce una tarea pendiente</h1>
+    <label>Tarea: </label><input type="text" id="tarea" placeholder="Sacar al perro">
+    <button onclick="guardarTarea()">Agregar</button>
+    <div>
+        <p id="tareas"></p>
+    </div>
+</body>
+</html>

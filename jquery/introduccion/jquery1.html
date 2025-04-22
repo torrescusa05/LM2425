@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery1</title>
+    <!--Inclusión librería a través de CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        //Para que cargue primero los elementos HTML usaremos .ready:
+        //Una vez cargado todos los elementos jQuery se inicia
+        $(document).ready(function()
+        {
+            $("#boton").click(function()
+            {
+                alert('Su dispositivo ha sido capturado, por favor ingrese la cantidad de Bitcoins pedidas');
+                $(".animacion").animate(
+                {
+                    left: '250px'
+                });
+            })
+        });
+    </script>
+    <h1>Introducción a jQuery</h1>
+    <p class="animacion">Esto es un párrafo de ejemplo para ver qué cosas hacer jQuery Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit expedita architecto, quod ab optio illo consectetur, debitis, cumque cupiditate porro nemo facilis. Suscipit, laboriosam velit illum nam nihil perspiciatis!</p>
+    <p class="animacion">Segundo párrafo Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae et exercitationem at, quibusdam voluptatum quo voluptates, voluptate magnam quod iusto! Quas nihil maxime, et eos officia molestias tenetur expedita?</p>
+    <p class="animacion">Tercer párrafo y úlimo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore natus hic quasi eligendi fuga enim dignissimos ea sed, tempora nam numquam accusantium vero placeat iure id consequatur nobis animi quo!</p>
+    <button id="boton">Clic aquí y gana un Iphone 16</button>
+</body>
+</html>

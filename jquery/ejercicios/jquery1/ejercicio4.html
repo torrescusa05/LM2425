@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como el Tajo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("#aparece").click(function()
+            {
+                $("#titulo").css({"font-size": "40px"});
+                $(".pares").css({"font-size": "40px"});
+                $("#titulo").css({"font-size": "40px", "color": "red"});
+                $(".pares").css({"font-size": "40px", "color": "blue"});
+            });
+
+            $("#desaparece").click(function()
+            {
+                $("#titulo").css({"font-size": "20px"});
+                $(".pares").css({"font-size": "20px"});
+                $("#titulo").css({"color": "black"});
+                $(".pares").css({"color": "black"});
+            });
+        });
+    </script>
+    <h1 id="titulo">Hola mundo!!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p class="pares">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p class="pares">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <button id="aparece">Más grande</button>
+    <button id="desaparece">Más pequeño</button>
+</body>
+</html>

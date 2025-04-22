@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como el Guadiana</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("#aparece").click(function()
+            {
+                $("h1").show();
+                $("p").show();
+            });
+
+            $("#desaparece").click(function()
+            {
+                $("h1").hide();
+                $("p").hide();
+            });
+        })
+    </script>
+    <h1>Hola mundo!!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <button id="aparece">Aparecer</button>
+    <button id="desaparece">Desaparecer</button>
+</body>
+</html>

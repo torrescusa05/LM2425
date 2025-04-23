@@ -12,26 +12,19 @@
         {
             $("#aparece").click(function()
             {
-                $("#titulo").css({"font-size": "40px"});
-                $(".pares").css({"font-size": "40px"});
-                $("#titulo").css({"font-size": "40px", "color": "red"});
-                $(".pares").css({"font-size": "40px", "color": "blue"});
+                $("div").fadeIn("slow");
             });
 
             $("#desaparece").click(function()
             {
-                $("#titulo").css({"font-size": "20px"});
-                $(".pares").css({"font-size": "20px"});
-                $("#titulo").css({"color": "black"});
-                $(".pares").css({"color": "black"});
+                $("div").fadeOut("slow");
             });
         });
     </script>
     <h1 id="titulo">Hola mundo!!!</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
     <p class="pares">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
-    <div style="background-color:brown; display: none;">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
+    <div style="background-color:brown; display: none; width: 80px; height: 80px">
     </div>
         <p class="pares">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laborum, iure expedita, similique magni nostrum illum quaerat esse dicta voluptatum hic fugit quod, quos optio ex! Sequi praesentium animi omnis?</p>
     <button id="aparece">Aparecer</button>

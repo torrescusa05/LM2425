@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            var h1a = $("h1").length;
+            var h2a = $("h2").length;
+            var h4a = $("h4").length;
+            var pa = $("p").length;
+            var imga = $("img").length;
+
+            $("#h1").text(h1a);
+            $("#h2").text(h2a);
+            $("#h4").text(h4a);
+            $("#p").text(pa);
+            $("#img").text(imga);
+        });
+    </script>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit sequi pariatur natus maxime commodi, nobis optio officiis quo consequuntur exercitationem velit omnis eum fugit voluptate laborum. Ullam, ad repudiandae.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eaque alias odit totam inventore velit cum, blanditiis quia nisi dolorem laudantium aliquam doloremque earum sit aperiam enim, qui ab eius!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium totam dolor quaerat! Et officia obcaecati, blanditiis quaerat sequi, minima nihil fugit id, deserunt perferendis voluptatum aperiam! Dolorum, vitae modi!</p>
+    <img src="https://picsum.photos/200/300"><img src="https://picsum.photos/500/300"><img src="https://picsum.photos/200/200">
+    <h2>no</h2>
+    <h4>Si</h4>
+    <table border="2px">
+        <tr>
+            <th>Nº H1</th>
+            <th>Nº H2</th>
+            <th>Nº H4</th>
+            <th>Nº p</th>
+            <th>Nº img</th>
+        </tr>
+        <td id="h1"></td>
+        <td id="h2"></td>
+        <td id="h4"></td>
+        <td id="p"></td>
+        <td id="img"></td>
+    </table>
+</body>
+</html>

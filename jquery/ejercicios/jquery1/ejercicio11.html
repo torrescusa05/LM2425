@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("div").empty()
+            })
+        });
+    </script>
+    <div>
+        <label for="hola">Escribe tu nombre: </label><input type="text" name="hola" id="hola" value="Jose"><br>
+    </div>
+    <div>
+        <button>Desaparecer</button>
+    </div>
+</body>
+</html>

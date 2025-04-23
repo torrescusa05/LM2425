@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>val()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                var texto = $("#hola").val()
+                alert('Su nombre es: ' +texto);
+            })
+        });
+    </script>
+    <label for="hola">Escribe tu nombre: </label><input type="text" name="hola" id="hola"><br>
+    <button>Enviar</button>
+</body>
+</html>

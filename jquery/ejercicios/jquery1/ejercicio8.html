@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("#imagen").click(function()
+            {
+            
+            var src = $("img").attr("src");
+            alert('src de la imagen ' +src);
+            
+            });
+
+            $("#parrafo").click(function()
+            {
+                var html = $("div").html();
+                alert('HTML del parrafo ' +html);
+            });
+
+            $("#encabezado").click(function()
+            {
+                var html = $("#lorem").html();
+                alert('HTML del parrafo ' +html);
+            });
+        });
+    </script>
+    <h1 id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit sequi pariatur natus maxime commodi, nobis optio officiis quo consequuntur exercitationem velit omnis eum fugit voluptate laborum. Ullam, ad repudiandae.</h1>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eaque alias odit totam inventore velit cum, blanditiis quia nisi dolorem laudantium aliquam doloremque earum sit aperiam enim, qui ab eius!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium totam dolor quaerat! Et officia obcaecati, blanditiis quaerat sequi, minima nihil fugit id, deserunt perferendis voluptatum aperiam! Dolorum, vitae modi!</p>
+    <img src="https://picsum.photos/200/300"><img src="https://picsum.photos/500/300"><img src="https://picsum.photos/200/200">
+    <h2>no</h2>
+    <h4>Si</h4>
+    <button id="imagen">Obtener scr de la imagen</button>
+    <button id="encabezado">Obtener html del encabezado</button>
+    <button id="parrafo">Obtener html de un párrafo</button>

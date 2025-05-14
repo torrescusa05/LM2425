@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Clics Aleatorios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function ()
+        {
+            //Record que se guardará en localstorage
+            var record = localStorage.getItem("record");
+
+            //jquery simplificado
+            // Referencia a <span> de resultado y puntuación
+            var resultado = $("#resultado");
+            var pts = $("#puntuacion");
+            let segcirculo = 1000;
+            let puntuacion = 0;
+            var tiempo = 30;
+
+            //Iniciar Juego
+            $("#empezarjuego").click(function ()
+            {
+                setTimeout(function()
+                {
+                    $(".circulo").on("click" ,function ()
+                        {
+                            console.log(puntuacion);
+                            puntuacion=puntuacion+1;
+                            $(pts).html(puntuacion);
+                        })
+
+                    const intervalo = setInterval(function()
+                    {
+                        tiempo--;
+                        $(".circulo").show();
+                        $(".circulo").css("width",Math.floor(Math.random() * 20+40)+"px");
+                        $(".circulo").css("height",Math.floor(Math.random() * 20+40)+"px");
+                        $(".circulo").css("top",Math.floor(Math.random() *300)+"px");
+                        $(".circulo").css("left",Math.floor(Math.random() *600)+"px");
+                        if (tiempo == 0)
+                        {
+                            clearInterval(intervalo);
+                            $(".circulo").hide();
+                            if (puntuacion > record)
+                            {
+                                alert("Has establecido un nuevo récord: " +puntuacion+ "pts");
+                                localStorage.setItem("record", puntuacion);
+                                $(resultado).html(localStorage.getItem("record"));
+                            };
+                        }
+                    },segcirculo);
+                })
+                //Comparamos record
+            });
+            //Muestra el récord
+            $("#resultado").html(+record);
+        });
+    </script>
+    <h1>Juego de Clics Aleatorios</h1>
+    <p>Récord: <span id="resultado"></span></p>
+    <input type="button" value="Iniciar Juego" id="empezarjuego">
+    <div class="contenedor">
+        <div class="caja">
+            <div class="circulo"></div>
+        </div>
+    </div>
+    <p>Puntuación: <span id="puntuacion">0</span></p>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Información de Sevici</title>
+    <link rel="stylesheet" href="sevici.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Información de Sevici</h1>
+        <div class="buttons">
+            <button id="numStations">Calcular número de estaciones disponibles</button>
+            <button id="totalBikes">Mostrar total de bicicletas</button>
+            <button id="totalFree">Mostrar total de sitios libres</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        $(document).ready(function () 
+        {
+            //Declaración de variables
+            var numeroestaciones = $("#numStations");
+            var totalbicis = $("#totalBikes");
+            var sitioslibre = $("#totalFree");
+            var resultado = $("#result");
+
+            //Botón primero, cuando realice clic cargue el .json, si lo carga realiza el programa,
+            //si no indica el fallo.
+            $(numeroestaciones).click(function ()
+            {
+                $.get('http://api.citybik.es/sevici.json').done(function(e)
+                {
+                    console.log(e);
+                    $(resultado).text("Número de estaciones disponibles: " +e.length);
+                }).fail(function (e)
+                {
+                    $(resultado).text("Ha ocurrido error, por favor inténtelo más tarde.")
+                }); 
+            });
+
+            //Boton segundo, total de bicis
+            $(totalbicis).click(function ()
+            {
+                $.get('http://api.citybik.es/sevici.json').done(function(e)
+                {
+                    var bicis = 0;
+                    for(var i = 0; i < e.length; i++)
+                    {
+                        bicis = bicis + e[i].bikes;
+                    }
+                    console.log(bicis);
+                    $(resultado).text("Total de bicicletas: "+bicis);
+                }).fail(function (e){
+                    $(resultado).text("Ha ocurrido error, por favor inténtelo más tarde.");
+                })
+            })
+
+            //Boton tercero, sitios libres
+            $(sitioslibre).click(function ()
+            {
+                $.get("http://api.citybik.es/sevici.json").done(function(e)
+                {
+                    var bicis = 0;
+                    for(var i = 0; i < e.length; i++)
+                    {
+                        bicis = bicis + e[i].free;
+                    }
+                    console.log(bicis);
+                    $(resultado).text("Total de sitios libres: "+bicis)
+                }).fail(function (e)
+                {
+                    $(resultado).text("Ha ocurrido error, por favor inténtelo más tarde.");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
